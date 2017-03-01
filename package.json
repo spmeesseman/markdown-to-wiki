@@ -4,7 +4,13 @@
   "description": "Converts Markdown to a WikiMarkup used by Trac.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --use-strict --reporter list",
+    "test-watch": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --watch --use-strict --reporter list",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha \"tests/main.js\" \"tests/**/*.test.js\" --use-strict --reporter list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlewand/markdown-to-wiki-markup.git"
   },
   "keywords": [
     "trac",
@@ -13,5 +19,15 @@
     "mediawiki"
   ],
   "author": "Marek Lewandowski",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlewand/markdown-to-wiki-markup/issues"
+  },
+  "homepage": "https://github.com/mlewand/markdown-to-wiki-markup#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "typescript": "^2.3.0-dev.20170301"
+  }
 }
