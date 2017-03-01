@@ -1,0 +1,17 @@
+{
+  "name": "markdown-to-wiki-markup",
+  "version": "0.0.1",
+  "description": "Converts Markdown to a WikiMarkup used by Trac.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "trac",
+    "markdown",
+    "converter",
+    "mediawiki"
+  ],
+  "author": "Marek Lewandowski",
+  "license": "MIT"
+}
