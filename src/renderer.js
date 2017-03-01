@@ -17,4 +17,6 @@ ${code}
 }}}
 `;
 
+renderer.br = () => '\n';
+
 module.exports = renderer;
