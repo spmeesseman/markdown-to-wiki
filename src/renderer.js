@@ -19,4 +19,10 @@ ${code}
 
 renderer.br = () => '\n';
 
+renderer.list = ( body, ordered ) => {
+	return '\n' + ( ordered ? body : body.replace( /^1./gm, '*' ) ) + '\n';
+};
+
+renderer.listitem = text => `1. ${text}\n`;
+
 module.exports = renderer;
