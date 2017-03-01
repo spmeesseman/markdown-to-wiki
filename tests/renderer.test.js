@@ -28,4 +28,34 @@ describe( 'renderer', () => {
 			expect( renderer.link( 'http://foo', '', 'text' ) ).to.be.eql( '[http://foo text]' );
 		} );
 	} );
+
+	describe( 'code', () => {
+		it( 'works with a lang', () => {
+			let input = '<ol>\n' +
+					'	<li>foo</li>\n' +
+					'	<li>foo</li>\n' +
+					'</ol>',
+				expected = '{{{#!html\n' +
+					'<ol>\n' +
+					'	<li>foo</li>\n' +
+					'	<li>foo</li>\n' +
+					'</ol>\n' +
+					'}}}\n';
+			expect( renderer.code( input, 'html' ) ).to.be.eql( expected );
+		} );
+
+		it( 'works without a lang', () => {
+			let input = '<ol>\n' +
+					'	<li>foo</li>\n' +
+					'	<li>foo</li>\n' +
+					'</ol>',
+				expected = '{{{\n' +
+					'<ol>\n' +
+					'	<li>foo</li>\n' +
+					'	<li>foo</li>\n' +
+					'</ol>\n' +
+					'}}}\n';
+			expect( renderer.code( input ) ).to.be.eql( expected );
+		} );
+	} );
 } );

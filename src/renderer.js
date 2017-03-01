@@ -12,4 +12,9 @@ renderer.paragraph = text => String( text ) + '\n';
 
 renderer.link = ( href, title, text ) => `[${href} ${text}]`;
 
+renderer.code = ( code, lang ) => `{{{${lang ? '#!' + lang : ''}
+${code}
+}}}
+`;
+
 module.exports = renderer;
