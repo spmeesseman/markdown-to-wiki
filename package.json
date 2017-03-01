@@ -26,6 +26,7 @@
   "homepage": "https://github.com/mlewand/markdown-to-wiki-markup#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "fs-promise": "^2.0.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "typescript": "^2.3.0-dev.20170301"
