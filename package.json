@@ -2,7 +2,7 @@
   "name": "markdown-to-wiki-markup",
   "version": "0.0.1",
   "description": "Converts Markdown to a WikiMarkup used by Trac.",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --use-strict --reporter list",
     "test-watch": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --watch --use-strict --reporter list",
