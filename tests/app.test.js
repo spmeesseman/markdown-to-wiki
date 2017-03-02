@@ -15,6 +15,7 @@ describe( 'app', () => {
 
 			checkFixture( 'appTest1' );
 			checkFixture( 'appTest2' );
+			checkFixture( 'appTest3' );
 			checkFixture( 'lists' );
 		} );
 	} );

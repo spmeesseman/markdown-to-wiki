@@ -25,4 +25,8 @@ renderer.list = ( body, ordered ) => {
 
 renderer.listitem = text => `1. ${text}\n`;
 
+renderer.codespan = code => `\`${code}\``;
+
+renderer.image = href => `[[Image(${href})]]`;
+
 module.exports = renderer;

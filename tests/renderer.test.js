@@ -58,4 +58,16 @@ describe( 'renderer', () => {
 			expect( renderer.code( input ) ).to.be.eql( expected );
 		} );
 	} );
+
+	describe( 'codespan', () => {
+		it( 'works', () => {
+			expect( renderer.codespan( 'foo bar' ) ).to.be.eql( '`foo bar`' );
+		} );
+	} );
+
+	describe( 'image', () => {
+		it( 'works', () => {
+			expect( renderer.image( 'http://foo.png', 'title', 'text' ) ).to.be.eql( '[[Image(http://foo.png)]]' );
+		} );
+	} );
 } );
