@@ -6,16 +6,16 @@ const renderer = require( '../src/renderer' );
 describe( 'renderer', () => {
 	describe( 'heading', () => {
 		it( 'works with a header level 1', () => {
-			expect( renderer.heading( 'abcDEF', 1 ) ).to.be.eql( '= abcDEF\n' );
+			expect( renderer.heading( 'abcDEF', 1 ) ).to.be.eql( '\n= abcDEF' );
 		} );
 		it( 'works with a header level 6', () => {
-			expect( renderer.heading( 'aa', 6 ) ).to.be.eql( '====== aa\n' );
+			expect( renderer.heading( 'aa', 6 ) ).to.be.eql( '\n====== aa' );
 		} );
 	} );
 
 	describe( 'paragraph', () => {
 		it( 'works', () => {
-			expect( renderer.paragraph( 'foo bar BAZ!' ) ).to.be.eql( 'foo bar BAZ!\n' );
+			expect( renderer.paragraph( 'foo bar BAZ!' ) ).to.be.eql( '\nfoo bar BAZ!' );
 		} );
 	} );
 
@@ -35,12 +35,12 @@ describe( 'renderer', () => {
 					'	<li>foo</li>\n' +
 					'	<li>foo</li>\n' +
 					'</ol>',
-				expected = '{{{#!html\n' +
+				expected = '\n{{{#!html\n' +
 					'<ol>\n' +
 					'	<li>foo</li>\n' +
 					'	<li>foo</li>\n' +
 					'</ol>\n' +
-					'}}}\n';
+					'}}}';
 			expect( renderer.code( input, 'html' ) ).to.be.eql( expected );
 		} );
 
@@ -49,12 +49,12 @@ describe( 'renderer', () => {
 					'	<li>foo</li>\n' +
 					'	<li>foo</li>\n' +
 					'</ol>',
-				expected = '{{{\n' +
+				expected = '\n{{{\n' +
 					'<ol>\n' +
 					'	<li>foo</li>\n' +
 					'	<li>foo</li>\n' +
 					'</ol>\n' +
-					'}}}\n';
+					'}}}';
 			expect( renderer.code( input ) ).to.be.eql( expected );
 		} );
 	} );
