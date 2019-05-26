@@ -23,6 +23,9 @@
     "test-watch": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --watch --use-strict --reporter list",
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha \"tests/main.js\" \"tests/**/*.test.js\" --use-strict --reporter list"
   },
+  "files": [
+    "src"
+  ],
   "keywords": [
     "trac",
     "markdown",

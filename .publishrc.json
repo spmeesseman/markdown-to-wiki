@@ -5,14 +5,14 @@
     "historyLineLen":   80,
     "installerRelease": "Y",
     "installerExDist":  "Y",
-    "interactive":      "N",
+    "interactive":      "Y",
     "npmRelease":       "Y",
     "pathtoRoot":       ".",
     "pathtoMainRoot":   "",
     "pathPreRoot":      "",
     "pathToDist":       "install\\dist",
     "skipDeployPush":   "Y",
-    "testEmailRecip":   "smeesseman@pjats.com",
+    "testEmailRecip":   "spmeesseman@gmail.com",
     "textEditor":       "notepad++",
     "versionText":      "Version",
     "repoType":         "git",
@@ -25,6 +25,10 @@
         "npmRegistry":      "https://registry.npmjs.org"
     },
     {
+        "interactive":      "N",
+        "textEditor":       "",
+        "installerRelease": "N",
+        "installerExDist":  "N",
         "npmRegistry":      "https://npm.development.pjats.com"
     }]
 }
