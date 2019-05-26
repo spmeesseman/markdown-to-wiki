@@ -16,6 +16,10 @@
     "textEditor":       "notepad++",
     "versionText":      "Version",
     "repoType":         "git",
+    "buildCommand":  [
+        "npm pack",
+        "cmd /c move /Y *-markdown-to-wiki-* install\\dist\\markdown-to-wiki.tgz"
+    ],
     "runs": [
     {
         "npmRegistry":      "https://registry.npmjs.org"

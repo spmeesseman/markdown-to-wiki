@@ -11,7 +11,7 @@
   "homepage": "https://github.com/spmeesseman/markdown-to-wiki#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mlewand/markdown-to-wiki.git"
+    "url": "git+https://github.com/spmeesseman/markdown-to-wiki.git"
   },
   "bugs": {
     "url": "https://github.com/spmeesseman/markdown-to-wiki/issues"
