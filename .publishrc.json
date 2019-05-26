@@ -25,7 +25,6 @@
         "npmRegistry":      "https://registry.npmjs.org"
     },
     {
-        "interactive":      "N",
         "textEditor":       "",
         "installerRelease": "N",
         "installerExDist":  "N",
