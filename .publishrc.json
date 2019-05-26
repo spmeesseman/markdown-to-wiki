@@ -29,6 +29,7 @@
         "textEditor":       "",
         "installerRelease": "N",
         "installerExDist":  "N",
+        "emailNotification":"N",
         "npmRegistry":      "https://npm.development.pjats.com"
     }]
 }
