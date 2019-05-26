@@ -1,0 +1,26 @@
+{
+    "projectName":      "markdown-to-wiki",
+    "historyFile":      "doc\\history.txt",
+    "historyHdrFile":   "install\\history-hdr.txt",
+    "historyLineLen":   80,
+    "installerRelease": "Y",
+    "installerExDist":  "Y",
+    "interactive":      "N",
+    "npmRelease":       "Y",
+    "pathtoRoot":       ".",
+    "pathtoMainRoot":   "",
+    "pathPreRoot":      "",
+    "pathToDist":       "install\\dist",
+    "skipDeployPush":   "Y",
+    "testEmailRecip":   "smeesseman@pjats.com",
+    "textEditor":       "notepad++",
+    "versionText":      "Version",
+    "repoType":         "git",
+    "runs": [
+    {
+        "npmRegistry":      "https://registry.npmjs.org"
+    },
+    {
+        "npmRegistry":      "https://npm.development.pjats.com"
+    }]
+}
