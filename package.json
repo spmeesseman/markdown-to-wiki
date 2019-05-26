@@ -1,47 +1,49 @@
 {
-  "name": "@spmeesseman/markdown-to-wiki",
-  "version": "1.0.0",
-  "description": "Converts Markdown to a WikiMarkup used by Trac.",
-  "author": "Scott Meesseman",
-  "license": "MIT",
-  "main": "src/app.js",
-  "bin": {
-    "markdown-to-wiki": "src/app.js"
-  },
-  "homepage": "https://github.com/spmeesseman/markdown-to-wiki#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/spmeesseman/markdown-to-wiki.git"
-  },
-  "bugs": {
-    "url": "https://github.com/spmeesseman/markdown-to-wiki/issues"
-  },
-  "scripts": {
-    "app-publish": "app-publisher -p ps",
-		"app-publish-dry": "app-publisher -p ps --dry-run",
-    "test": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --use-strict --reporter list",
-    "test-watch": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --watch --use-strict --reporter list",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha \"tests/main.js\" \"tests/**/*.test.js\" --use-strict --reporter list"
-  },
-  "files": [
-    "src"
-  ],
-  "keywords": [
-    "trac",
-    "markdown",
-    "converter",
-    "mediawiki"
-  ],
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "fs-promise": "^2.0.3",
-    "istanbul": "^0.4.5",
-    "mocha": "^6.1.4",
-    "typescript": "^3.4.5"
-  },
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "gradient-string": "^1.2.0",
-    "marked": "^0.6.2"
-  }
+    "name": "@spmeesseman/markdown-to-wiki",
+    "version": "1.0.0",
+    "description": "Converts Markdown to a WikiMarkup used by Trac.",
+    "license": "MIT",
+    "author": {
+        "name": "Scott Meesseman"
+    },
+    "homepage": "https://github.com/spmeesseman/markdown-to-wiki#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/spmeesseman/markdown-to-wiki.git"
+    },
+    "bugs": {
+        "url": "https://github.com/spmeesseman/markdown-to-wiki/issues"
+    },
+    "scripts": {
+        "app-publish": "app-publisher -p ps",
+        "app-publish-dry": "app-publisher -p ps --dry-run",
+        "test": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --use-strict --reporter list",
+        "test-watch": "./node_modules/.bin/mocha \"tests/main.js\" \"tests/**/*.test.js\" --watch --use-strict --reporter list",
+        "coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha \"tests/main.js\" \"tests/**/*.test.js\" --use-strict --reporter list"
+    },
+    "files": [
+        "src"
+    ],
+    "main": "src/app.js",
+    "bin": {
+        "markdown-to-wiki": "src/app.js"
+    },
+    "keywords": [
+        "trac",
+        "markdown",
+        "converter",
+        "mediawiki"
+    ],
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "fs-promise": "^2.0.3",
+        "istanbul": "^0.4.5",
+        "mocha": "^6.1.4",
+        "typescript": "^3.4.5"
+    },
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "gradient-string": "^1.2.0",
+        "marked": "^0.6.2"
+    }
 }
