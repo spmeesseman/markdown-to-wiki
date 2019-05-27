@@ -44,6 +44,7 @@
         "distRelease":      "Y",
         "npmPackDist":      "Y",
         "emailNotification":"Y",
-        "npmRegistry":      "https://npm.development.pjats.com"
+        "npmRegistry":      "https://npm.development.pjats.com",
+        "npmScope":         "@perryjohnson"
     }]
 }
